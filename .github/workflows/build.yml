@@ -21,8 +21,9 @@ jobs:
 
       - name: Build Plugin with Gradle
         run: |
-          chmod +x ./any-door-plugin/gradlew
-          ./any-door-plugin/gradlew buildPlugin
+          cd ./any-door-plugin
+          chmod +x ./gradlew
+          ./gradlew buildPlugin
 
       - name: Upload Plugin Artifact
         uses: actions/upload-artifact@v3
