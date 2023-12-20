@@ -28,5 +28,4 @@ jobs:
       - name: Upload Plugin Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: plugin-artifact
           path: ./any-door-plugin/build/distributions/*.zip
