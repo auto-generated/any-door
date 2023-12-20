@@ -28,4 +28,5 @@ jobs:
       - name: Upload Plugin Artifact
         uses: actions/upload-artifact@v3
         with:
+          name: ${{ github.event_name }}-${{ github.sha }}
           path: ./any-door-plugin/build/distributions/*.zip
